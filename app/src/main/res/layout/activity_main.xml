@@ -1,0 +1,211 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:baselineAligned="false"
+    android:layout_height="match_parent"
+    tools:context="test.tester.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/devider"
+        android:id="@+id/top_devider"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/top_nav"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:id="@+id/top_nav"
+        android:background="@android:color/white"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="82.4dp"
+            android:layout_height="66dp"
+            android:id="@+id/explore_button_container"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/explore_button"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/exploreicon"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/explore_button"
+                android:text="explore"
+                android:textIsSelectable="false"
+                android:layout_centerHorizontal="true"
+                android:textSize="14dp"
+                android:id="@+id/explore_button_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="82.4dp"
+            android:layout_height="66dp"
+            android:id="@+id/activities_button_container"
+            android:layout_toRightOf="@+id/explore_button_container">
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/activities_button"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/activitiesicon"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activities_button"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:text="activities"
+                android:id="@+id/activities_button_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="82.4dp"
+            android:layout_height="66dp"
+            android:id="@+id/post_button_container"
+            android:layout_toRightOf="@+id/activities_button_container">
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/post_button"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/posticon"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_button"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:text="post"
+                android:id="@+id/post_button_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="82.4dp"
+            android:layout_height="66dp"
+            android:id="@+id/inbox_button_container"
+            android:layout_toRightOf="@+id/post_button_container">
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/inbox_button"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/inboxicon"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inbox_button"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:text="inbox"
+                android:id="@+id/inbox_button_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="82.4dp"
+            android:layout_height="66dp"
+            android:id="@+id/profile_button_container"
+            android:layout_toRightOf="@+id/inbox_button_container">
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:id="@+id/profile_button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="false"
+                android:background="@drawable/profileicon"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_button"
+                android:textSize="14dp"
+                android:layout_centerHorizontal="true"
+                android:text="profile"
+                android:id="@+id/profile_button_text" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mid_fragments"
+        android:layout_below="@+id/top_devider">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/menu_fragment">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/explore_fragment_main">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/activities_fragment_main">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/post_fragment_main">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/inbox_fragment_main">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/profile_fragment_main">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/post_pop_fragment_main">
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/devider"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/bottom_devider"
+        android:layout_alignParentBottom="false"
+        android:layout_above="@+id/top_nav"></RelativeLayout>
+
+</RelativeLayout>

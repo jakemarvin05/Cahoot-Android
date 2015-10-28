@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.tester.Post">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/post_container"
+        android:background="#cc252525">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <RelativeLayout
+                android:layout_width="206dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true">
+
+                <Button
+                    android:layout_width="84dp"
+                    android:layout_height="84dp"
+                    android:id="@+id/post_trip_button"
+                    android:layout_above="@+id/post_trip_text"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/posttripbutton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="post trip"
+                    android:id="@+id/post_trip_text"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="206dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true">
+
+                <Button
+                    android:layout_width="82.5dp"
+                    android:layout_height="88dp"
+                    android:id="@+id/post_request_button"
+                    android:layout_above="@+id/post_request_text"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/postrequestbutton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="post request"
+                    android:id="@+id/post_request_text"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/post_fragment">
+    </RelativeLayout>
+
+</RelativeLayout>

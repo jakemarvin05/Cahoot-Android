@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Tester</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_email_input_text_view">EMAIL</string>
+    <string name="login_password_input_text_view">PASSWORD</string>
+    <string name="forgot_password_text_view">forgot password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_explore">Explore</string>
+    <string name="title_activity_activities">Activities</string>
+    <string name="title_activity_post">Post</string>
+    <string name="title_activity_inbox">Inbox</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_tab">Tab</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_cahoot">Cahoot</string>
+    <string name="title_activity_itenerary">Itenerary</string>
+    <string name="title_activity_request">Request</string>
+    <string name="title_activity_explore_main">explore_main</string>
+    <string name="title_activity_explore_product">Explore_product</string>
+    <string name="title_activity_post_itinerary">Post_itinerary</string>
+    <string name="title_activity_post_request">Post_request</string>
+</resources>

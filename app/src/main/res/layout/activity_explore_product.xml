@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.cahoot.Explore_product">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@color/devider"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_alignParentTop="false"
+            android:background="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/top_panel"
+            android:layout_below="@+id/top_devider"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp">
+            <RelativeLayout
+                android:layout_width="206dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/country_panel"
+                android:layout_toLeftOf="@+id/mid_devider">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Country"
+                    android:id="@+id/country_panel_text"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/textGray"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="JAPAN"
+                    android:id="@+id/country_dropdown_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="13.5dp"
+                    android:layout_height="7dp"
+                    android:id="@+id/button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/dropdownbutton"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="3dp"
+                android:layout_height="75dp"
+                android:background="@color/devider"
+                android:layout_alignParentTop="true"
+                android:id="@+id/mid_devider"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_centerHorizontal="true">
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="206dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/filter_panel"
+                android:layout_toRightOf="@+id/mid_devider">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Filter"
+                    android:id="@+id/filter_panel_text"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/textGray"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="DATE"
+                    android:id="@+id/filter_dropdown_text"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:layout_width="13.5dp"
+                    android:layout_height="7dp"
+                    android:id="@+id/button2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/dropdownbutton"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.tester.Explore">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/misc_nav"
+        >
+
+        <RelativeLayout
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back_button_container"
+            android:layout_centerVertical="true">
+
+            <Button
+                android:layout_width="11dp"
+                android:layout_height="22.5dp"
+                android:id="@+id/back_button"
+                android:background="@drawable/backbutton"
+                android:layout_marginRight="6.5dp"
+                android:layout_marginLeft="6.5dp"
+                android:layout_marginTop="0.75dp"
+                android:layout_marginBottom="0.75dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/search_button"
+            android:background="@drawable/searchbutton"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/explore_container"
+        android:layout_below="@+id/misc_nav">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/japan_product_button"
+            android:src="@drawable/japan"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/america_product_button"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/america_product_button"
+            android:background="@drawable/america"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp" />
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/france_product_button"
+            android:src="@drawable/france"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/explore_fragment"
+        android:layout_below="@+id/misc_nav">
+
+    </RelativeLayout>
+
+</RelativeLayout>
