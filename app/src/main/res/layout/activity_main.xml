@@ -14,20 +14,26 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/top_nav"></RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="66dp"
         android:id="@+id/top_nav"
         android:background="@android:color/white"
         android:layout_alignParentBottom="false"
+        android:weightSum="1"
         android:layout_alignParentTop="true">
 
+
         <RelativeLayout
-            android:layout_width="82.4dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.2"
             android:layout_height="66dp"
             android:id="@+id/explore_button_container"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true">
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="false">
+
             <Button
                 android:layout_width="36dp"
                 android:layout_height="36dp"
@@ -35,7 +41,9 @@
                 android:layout_alignParentTop="true"
                 android:background="@drawable/exploreicon"
                 android:layout_centerInParent="true"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -49,7 +57,8 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="82.4dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.20"
             android:layout_height="66dp"
             android:id="@+id/activities_button_container"
             android:layout_toRightOf="@+id/explore_button_container">
@@ -73,7 +82,8 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="82.4dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.2"
             android:layout_height="66dp"
             android:id="@+id/post_button_container"
             android:layout_toRightOf="@+id/activities_button_container">
@@ -97,7 +107,8 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="82.4dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.20"
             android:layout_height="66dp"
             android:id="@+id/inbox_button_container"
             android:layout_toRightOf="@+id/post_button_container">
@@ -121,7 +132,8 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="82.4dp"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.20"
             android:layout_height="66dp"
             android:id="@+id/profile_button_container"
             android:layout_toRightOf="@+id/inbox_button_container">
@@ -145,7 +157,7 @@
                 android:id="@+id/profile_button_text" />
         </RelativeLayout>
 
-    </RelativeLayout>
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
